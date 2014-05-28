@@ -1,4 +1,5 @@
 class ProductsController < ApplicationController
+before_filter :login_required, :only => [:edit, :delete]
   # GET /products
   # GET /products.json
   def index
