@@ -14,8 +14,9 @@
       <th><%=t '.actions', :default => t("helpers.actions") %></th>
     </tr>
   </thead>
-  <tbody class="gola">
+  <tbody>
     <% @products.each do |product| %>
+     
       <tr>
         <td><%= link_to product.id, product_path(product) %></td>
         <td><%= product.name %></td>

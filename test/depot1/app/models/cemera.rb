@@ -1,0 +1,2 @@
+class Cemera < Product
+end

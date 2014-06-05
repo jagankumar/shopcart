@@ -26,6 +26,7 @@ group :assets do
   gem 'twitter-bootstrap-rails'
   gem 'less-rails'
   gem 'devise'
+  gem 'kaminari'
 end
 
 gem 'jquery-rails'

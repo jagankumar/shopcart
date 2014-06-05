@@ -1,0 +1,5 @@
+<div class="span-24">
+  <div class="span-24">
+    <%= image_tag "walmart.jpg" %>
+  </div>
+</div>

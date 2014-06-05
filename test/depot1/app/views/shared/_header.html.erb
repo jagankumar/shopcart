@@ -1,0 +1,31 @@
+<% categories = Product.categories %>
+
+<div class="span-24">
+  <div class="span-24">
+    <%= image_tag "walmart.jpg", :width => '950', :height => '200' %>
+  </div>
+<div class="span-24">
+<nav id="ddmenu">
+<ul>
+<li><%= link_to image_tag('home.png')+"Home" %></li><% 22.times do %> &nbsp; <%end%>
+
+<li><%= link_to image_tag('product.png')+"Products" %><% 23.times do %> &nbsp; <%end%>
+           <div>
+                <div class="column">
+                    <% categories.each do |category| %>
+                    <%= link_to "#{category}", products_path(:category => "#{category}") %>
+			
+                     <% end%>
+                 
+                </div>
+   
+</li>
+
+<li><%= link_to image_tag('about.png')+"About" %></li><% 23.times do %> &nbsp; <%end%>
+<li><%= link_to image_tag('contact.png')+"Contact" %></li>
+</div>
+</ul>
+
+</div>
+
+
