@@ -3,4 +3,8 @@ class ApplicationController < ActionController::Base
   before_filter :authenticate_user!
      def create
      end
+     def edit
+     end
+     def delete
+     end
 end
